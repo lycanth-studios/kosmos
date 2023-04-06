@@ -1,6 +1,4 @@
 {
-	"rust-analyzer.cargo.loadOutDirsFromCheck": true,
-
 	"editor.tabSize": 4,
 	"editor.insertSpaces": false,
 
