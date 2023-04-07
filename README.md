@@ -1,29 +1,6 @@
-# macrostack
+# kosmos
 
-An example of a full-stack, microservice-based application written in Rust and TypeScript.
-
-## Dependencies
-
-- [Rust](https://www.rust-lang.org/tools/install)
-- [Node.js](https://nodejs.org/en/download/)
-- [pnpm](https://pnpm.io/installation)
-
-### Global PNPM Dependencies
-
-Macrostack also relies on some CLI tooling provided by the NPM repository. Since NPM scripts are run from the project directory rather than CWD, these must be installed globally to function correctly.
-
-- [buf](https://docs.buf.build/installation)
-
-## Structure
-
-Below is a brief overview of the structure of this repository.
-
-- `/apps` - This directory contains the source code for applications deployed publicly.
-- `/common` - This directory contains the source code for the common libraries in both TypeScript and Rust.
-- `/crates` - This directory contains the source code for the crates written in Rust.
-- `/infrastructure` - This directory contains the Terraform infrastructure-as-code for the project.
-- `/packages` - This directory contains the source code for the packages written in TypeScript.
-- `/services` - A dedicated directory containing the source code for the project's microservices.
+A web-based terrain generator powered by Rust and WebAssembly.
 
 ## License
 
