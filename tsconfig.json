@@ -1,7 +1,7 @@
 {
 	"references": [
 		{
-			"path": "./common/protocol"
+			"path": "./packages/core"
 		}
 	]
 }
