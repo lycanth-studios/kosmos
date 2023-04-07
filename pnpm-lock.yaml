@@ -80,6 +80,8 @@ importers:
         specifier: 5.0.3
         version: 5.0.3
 
+  crates/render/pkg: {}
+
   packages/core:
     devDependencies:
       typescript:
@@ -109,6 +111,9 @@ importers:
       eslint-config-next:
         specifier: 13.3.0
         version: 13.3.0(eslint@8.37.0)(typescript@5.0.3)
+      kosmos-render:
+        specifier: workspace:*
+        version: link:../../crates/render/pkg
       postcss:
         specifier: 8.4.21
         version: 8.4.21

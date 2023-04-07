@@ -1,7 +1,5 @@
-import React, { useEffect } from "react";
-import ReactFlow, { Controls, Edge, Node, Position, useStoreApi } from "reactflow";
-
-import { useAppSelector } from "../redux";
+import React from "react";
+import ReactFlow, { Controls, Edge, Node, Position, ReactFlowProvider } from "reactflow";
 
 const initialNodes: Node[] = [
 	{
@@ -22,16 +20,13 @@ const initialNodes: Node[] = [
 const initialEdges: Edge[] = [];
 
 export const Graph: React.FC = () => {
-	const nodes = useAppSelector((state) => state.graph.nodes);
-	const { setState } = useStoreApi();
-
-	useEffect(() => {}, [nodes]);
-
 	return (
 		<div className="h-full w-full">
-			<ReactFlow nodes={initialNodes} edges={initialEdges}>
-				<Controls />
-			</ReactFlow>
+			<ReactFlowProvider>
+				<ReactFlow nodes={initialNodes} edges={initialEdges}>
+					<Controls />
+				</ReactFlow>
+			</ReactFlowProvider>
 		</div>
 	);
 };

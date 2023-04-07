@@ -9,6 +9,7 @@
 	},
 	"dependencies": {
 		"@kosmos/core": "workspace:*",
+		"kosmos-render": "workspace:*",
 		"@reduxjs/toolkit": "^1.9.3",
 		"@types/node": "^18.7.10",
 		"@types/react": "^18.0.15",

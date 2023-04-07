@@ -1,5 +1,12 @@
-import { Graph } from "@kosmos/ui";
+import { Graph, KosmosRenderer } from "@kosmos/ui";
 
 export default function Home() {
-	return <Graph />;
+	return (
+		<div className="flex flex-col w-full">
+			<div className="w-full">
+				<KosmosRenderer />
+			</div>
+			<Graph />
+		</div>
+	);
 }
